@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відповіді</title>
+    <style>
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            color: #B54343;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #F0E3E3;
+            color: black;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        p {
+            font-size: 25px;
+            margin-bottom: 20px;
+            font-family: Candara, sans-serif;
+        }
+        h3{
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-family: Candara, sans-serif;
+        }
+
+        .button-container {
+            text-align: right;
+        }
+
+        button {
+            border: 2px solid #B54343;
+            color: #000000;
+            padding: 10px 20px;
+            font-family: Candara, sans-serif;
+            border-radius: 8px;
+            font-size: 25px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        button:hover {
+            background-color: #B54343;
+            color: rgb(35, 15, 15);
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .answer {
+            display: none;
+            font-weight: bold;
+            color: #196b30;
+            font-family: Candara, sans-serif;
+        }
+        ul, li{
+            font-family: Candara, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Аналіз тестування частини №1</h1>
+    <div id="questions">
+        <div class="question">
+            <p>Як правильно пишуться загальні назви, утворені від імен або прізвищ?</p>
+            <h3>
+                <img src="https://cdn-icons-png.flaticon.com/512/404/404689.png" alt="Іконка" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" />
+                <b>Правило:</b> загальні назви, утворені від власних імен, прізвищ пишемо з малої літери: 
+                <i>шевченкіана, мічурінець, пушкініст.</i>
+            </h3>
+            <ul>
+                <li>З великої літери</li>
+                <li>З малої літери</li>
+                <li>Через дефіс</li>
+                <li>У лапках</li>
+            </ul>
+            <p class="answer">Правильна відповідь: З малої літери.</p>
+        </div>
+        <div class="question">
+            <p>Яке слово пишеться з великої літери?</p>
+            <h3>
+                <img src="https://cdn-icons-png.flaticon.com/512/404/404689.png" alt="Іконка" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" />
+                <b>Правило:</b> З великої літери пишуться назви найвищих державних посад України та міжнародних посад 
+                <i>Президент України, Президент Сполучених Штатів Америки, Голова Верховної Ради України.</i>
+            </h3>
+            <ul>
+                <li>міністр</li>
+                <li>доктор наук</li>
+                <li>генеральний секретар ООН</li>
+                <li>народний артист України</li>
+            </ul>
+            <p class="answer">Правильна відповідь: Генеральний секретар ООН.</p>
+        </div>
+        <div class="question">
+            <p>Як пишеться назва пошукової системи без родового слова?</p>
+            <h3>
+                <img src="https://cdn-icons-png.flaticon.com/512/404/404689.png" alt="Іконка" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" />
+                <b>Правило:</b> Назви сайтів, мереж, пошукових систем тощо без родового слова пошемо з малої букви <i>(фейсбук, гугл, вайбер)</i>,
+                 а з родовим словом – з великої букви та в лапках <i>(мережа «Фейсбук», пошукова система «Гугл», системи обміну повідомленнями «Вайбер»).</i>
+            </h3>
+            <ul>
+                <li>"Гугл"</li>
+                <li> Гугл</li>
+                <li>"гугл"</li>
+                <li> гугл</li>
+            </ul>
+            <p class="answer">Правильна відповідь: гугл</p>
+        </div>
+        <div id="questions">
+            <div class="question">
+                <p>Як пишеться слово "(А/а)кадемія (Н/н)аук України"?</p>
+                <h3>
+                    <img src="https://cdn-icons-png.flaticon.com/512/404/404689.png" alt="Іконка" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" />
+                    <b>Правило:</b> Тільки перше слово з великої літери пишеться у власних назвах академій, інститутів, кінотеатрів, театрів, музеїв, парків відпочинку :
+                    <i>Академія наук України, Кінотеатр імені Довженка, Парк культури імені Глоби.</i>
+                </h3>
+                <ul>
+                    <li>Академія Наук України</li>
+                    <li>Академія наук України</li>
+                    <li>академія наук України</li>
+                    <li>академія Наук України</li>
+                </ul>
+                <p class="answer">Правильна відповідь: Академія наук України</p>
+            </div>
+            <div class="question">
+                <p>Виберіть правильне написання присвійного прикметника:</p>
+                <h3>
+                    <img src="https://cdn-icons-png.flaticon.com/512/404/404689.png" alt="Іконка" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" />
+                    <b>Правило:</b> Присвійні прикметники утворені від власних назв, за допомогою суфіксів   -ів, -їв-, -ев-, -єв-, -ин-, -ін-, -ов- пишемо з великої літери: 
+                    <i>Андрієві книжки, Тичинина поезія.</i>
+                </h3>
+                <ul>
+                    <li>Шевченкові Твори</li>
+                    <li>Шевченкові твори</li>
+                    <li>шевченкові Твори</li>
+                    <li>шевченкові твори</li>
+                </ul>
+                <p class="answer">Правильна відповідь: Шевченкові твори</p>
+            </div>
+            <div class="question">
+                <p>Як пишуться прислівники, утворені поєднанням прийменника та числівника?</p>
+                <h3>
+                    <img src="https://cdn-icons-png.flaticon.com/512/404/404689.png" alt="Іконка" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" />
+                    <b>Правило:</b> Прислівники, утворені поєднанням прийменників : у, в, на + числівник пишемо разом :
+                    <i>уперше, надвоє, вперше.</i>
+                </h3>
+                <ul>
+                    <li>Разом</li>
+                    <li>Окремо</li>
+                    <li>Через дефіс</li>
+                    <li>У лапках</li>
+                </ul>
+                <p class="answer">Правильна відповідь: Разом</p>
+            </div>
+            <div class="question">
+                <p>Оберіть правильний спосіб написання слова:</p>
+                <h3>
+                    <img src="https://cdn-icons-png.flaticon.com/512/404/404689.png" alt="Іконка" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" />
+                    <b>Правило:</b> У кінці прислівників після к, г, х, пишемо и:
+                    <i>пішки, навкруги, верхи.</i> АЛЕ : восени, почасти, безвісти. 
+                </h3>
+                <ul>
+                    <li>навкругі</li>
+                    <li>навкругу</li>
+                    <li>навкруги</li>
+                    <li>навкруг</li>
+                </ul>
+                <p class="answer">Правильна відповідь: навкруги</p>
+            </div>
+            <div class="question">
+                <p>У якому випадку пишеться через дефіс?</p>
+                <h3>
+                    <img src="https://cdn-icons-png.flaticon.com/512/404/404689.png" alt="Іконка" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" />
+                    <b>Правило:</b> Якщо повторюються слова, корені, антоніми, синоніми пишемо через дефіс: 
+                    <i>Часто-часто, більш-менш, геть-чисто.</i>
+                </h3>
+                <ul>
+                    <li>на..совість</li>
+                    <li>спокон..віків</li>
+                    <li>мало..помалу</li>
+                    <li>до..дому</li>
+                </ul>
+                <p class="answer">Правильна відповідь: мало..помалу</p>
+            </div>
+            <div class="question">
+                <p>Який варіант правильний для власних назв типу "(К/к)иївський (Б/б)удинок (М/м)од"?</p>
+                <h3>
+                    <img src="https://cdn-icons-png.flaticon.com/512/404/404689.png" alt="Іконка" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" />
+                    <b>Правило:</b>Тільки перше слово з великої літери пишеться у складених назв типу :
+                    <i> Київський будинок мод, Львівський палац одруження.</i>  
+                </h3>
+                <ul>
+                    <li>Київський Будинок Мод</li>
+                    <li>Київський будинок мод</li>
+                    <li>київський будинок мод</li>
+                    <li>Київський будинок Мод</li>
+                </ul>
+                <p class="answer">Правильна відповідь: Київський будинок мод</p>
+            </div>
+            <div class="question">
+                <p>Оберіть правильний варіант написання слова</p>
+                <h3>
+                    <img src="https://cdn-icons-png.flaticon.com/512/404/404689.png" alt="Іконка" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" />
+                    <b>Правило:</b> У Якщо слова стоять у різних відмінках пишемо окремо. 
+                    <i>День у день, рік у рік, час від часу. </i> 
+                </h3>
+                <ul>
+                    <li>раз у раз</li>
+                    <li>раз-у-раз</li>
+                    <li>разураз</li>
+                    <li>раз ураз</li>
+                </ul>
+                <p class="answer">Правильна відповідь: раз у раз</p>
+            </div>
+            <div class="question">
+                <p>Як пишеться прислівник із префіксом "по" і основою на к, ч, ж?</p>
+                <h3>
+                    <img src="https://cdn-icons-png.flaticon.com/512/404/404689.png" alt="Іконка" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" />
+                    <b>Правило:</b> Якщо прислівник утворився за допомогою префікса по, а основа закінчується на к, ч, ж, то в кінці прислівника пишемо и : 
+                    <i>По-козацьки, по-вовчи.</i> 
+                </h3>
+                <ul>
+                    <li>по-ведмежі</li>
+                    <li>по-ведмежи</li>
+                    <li>по ведмежи</li>
+                    <li>по ведмежі</li>
+                </ul>
+                <p class="answer">Правильна відповідь: по-ведмежи</p>
+            </div>
+            <div class="question">
+                <p>Який варіант написання правильний для назви орденів, медалей?</p>
+                <h3>
+                    <img src="https://cdn-icons-png.flaticon.com/512/404/404689.png" alt="Іконка" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" />
+                    <b>Правило:</b> З великої літери пишуться назви орденів, медалей.
+                </h3>
+                <ul>
+                    <li>Медаль «за відвагу», Орден Пошани</li>
+                    <li>медаль «За відвагу», орден Пошани</li>
+                    <li>медаль За відвагу, орден «Пошани»</li>
+                    <li>медаль за відвагу, орден пошани</li>
+                </ul>
+                <p class="answer">Правильна відповідь: медаль «За відвагу», орден Пошани</p>
+            </div>
+    </div>
+
+    <div class="button-container">
+        <button type="button" onclick="toggleAnswers('none')">Приховати</button>
+        <button type="button" onclick="toggleAnswers('block')">Показати</button>
+    </div>
+
+    <script>
+        function toggleAnswers(displayStyle) {
+            const answers = document.querySelectorAll('.answer');
+            answers.forEach(answer => {
+                answer.style.display = displayStyle;
+            });
+        }
+    </script>
+
+</body>
+</html>

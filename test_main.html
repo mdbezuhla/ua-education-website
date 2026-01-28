@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8" />
+<title>Українська мова</title>
+
+<style>
+  body {
+    font-family: Candara, sans-serif;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    background-color: #F0E3E3;
+  }
+
+  h1 {
+    text-align: center;
+
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Відстань між кнопками */
+  }
+
+  button {
+    position: relative;
+    border: 3px solid #B54343;
+    color: #000000;
+    padding: 20px 70px;
+    text-align: center;
+    font-family: Candara, sans-serif;
+    border-radius: 12px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #B54343;
+    color: rgb(35, 15, 15);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Стилі для спливаючого віконця */
+  .tooltip {
+    visibility: hidden;
+    width: 220px;
+    background-color: #B54343;
+    color: #000;
+    text-align: left; /* Вирівнювання тексту */
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 110%; /* Розташування праворуч від кнопки */
+    transform: translateY(-50%);
+    z-index: 1;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease;
+    font-size: 18px;
+  }
+
+  button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+  <h1>Перевірка знань</h1>
+  <p><b>Зверніть увагу:</b> на кожне запитання виділено 20 секунд.</br> Після вибору відповіді таймер <b>автоматично</b> перезапускається для наступного запитання.</p>
+  <div class="button-container">
+    <a href="Test_part_1.html">
+      <button>
+        Частина №1
+        <div class="tooltip">Теми: велика літера, правопис прислівників.</div>
+      </button>
+    </a>
+    <a href="Test_part_2.html">
+      <button>
+        Частина №2
+        <div class="tooltip">Теми: м'який знак, апостроф.</div>
+      </button>
+    </a>
+    <a href="Test_part_3.html">
+      <button>
+        Частина №3
+        <div class="tooltip">Теми: складнопідрядні речення. Головна та підрядна частини. Види складнопідрядних речень. Сполучники і сполучні слова. Складносурядне речення. Складне безсполучникове речення. Розділові знаки (тире, двокрапка, кома, крапка з комою). </div>
+      </button>
+    </a>
+    <a href="Test_part_4.html">
+      <button>
+        Частина №4
+        <div class="tooltip">Теми: вставні слова і речення. Звертання. Розділові знаки при звертанні. Тире між підметом і присудком.</div>
+      </button>
+    </a>
+    <a href="Test_part_5.html">
+      <button>
+        Частина №5
+        <div class="tooltip">Теми: правопис складних прикметників; розряди за значенням. Написання префіксів. Прислівник; ступені порівняння; розряди за значенням. Числівник.</div>
+      </button>
+    </a>
+  </div>
+</body>
+</html>

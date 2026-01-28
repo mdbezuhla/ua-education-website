@@ -1,0 +1,160 @@
+body{
+  background-color: #F0E3E3;
+  margin: 0;
+}
+
+h2{
+  text-align: left ;
+  font-family: Candara, sans-serif;
+  font-size: 30px;
+  font-style: none;
+  color:rgb(35, 15, 15);
+}
+h1{
+  margin-top: 80px;
+  background-color: #dcbdbd;
+  text-align: center;
+  font-family: Candara, sans-serif;
+  font-size: 40px;
+  font-style: none;
+  color:rgb(35, 15, 15);
+  margin-bottom: 0px;
+}
+h3{
+  text-align: center;
+  font-family: Candara, sans-serif ;
+  font-size: 25px;
+  font-style: italic;
+}
+p{
+text-align: left;
+font-family: Candara, sans-serif;
+font-size: 25px;
+font-style: italic, bold;
+color:rgb(35, 15, 15);
+}
+.Ale{
+color:rgb(35, 15, 15);
+}
+ol{
+text-align: left;
+font-family: Candara, sans-serif ;
+font-size: 25px;
+font-style: none;
+color:rgb(35, 15, 15);
+}
+button {
+  border : 3px solid #B54343;
+  color: #000000;
+  padding: 20px 70px;
+  text-align: center;
+  font-family: Candara, sans-serif;
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-style: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #B54343;
+  color: rgb(35, 15, 15);
+}
+div {  text-align: right;} 
+.button1 {
+  padding: 20px 40px;
+  margin: 4px 2px;
+  float: right;
+}
+.button2 {
+  padding: 20px 40px;
+  margin: 4px 2px;
+  float: left;
+} 
+.mobile-container {
+  max-width: 100%;
+  margin: auto;
+  background-color: #F0E3E3;
+  color: black;
+  font-family: Candara, sans-serif;
+  font-size: 25px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #B54343;
+  position: fixed; /* Закріплюємо зверху */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Щоб елемент завжди був зверху */
+}
+
+ .topnav #myLinks {
+  padding: 15px;
+  display: none;
+  position: fixed; 
+  top: 60px; 
+  right: 0;
+  width: 30%; 
+  max-height: 80vh; 
+  background-color: #B54343; 
+  height: auto; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  overflow-y: auto; /* Увімкнення вертикальної прокрутки */
+  z-index: 999; 
+  text-align: left;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  font-family: Candara, sans-serif;
+  font-size: 25px;
+}
+
+.topnav a.icon {
+  background: #B54343;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-family: Candara, sans-serif;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: #dcbdbd;
+  color: black;
+  font-family: Candara, sans-serif; 
+  font-size: 25px;
+}
+
+.active {
+  background-color: #B54343;
+  color: white; /* Колір тексту "Українська мова" */
+  pointer-events: none; /* Вимикає можливість натискання */
+  text-align: left;
+}
+.image-button{
+  width: 30px;
+  height: 30px;
+}
+.image-button img{
+  width: 30px;
+  height: 30px;
+}
+.topnav .active {
+  white-space: nowrap; /* Запобігає переносу тексту */
+  overflow: hidden; /* Відкидає зайвий текст, якщо він не вміщується */
+  text-overflow: clip; /* Забирає три крапки, замість цього обрізає текст */
+  width: 100%; /* Додаємо ширину для повного вміщення тексту */
+}

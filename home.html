@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8" />
+<title>Українська мова</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  
+  body {
+    font-family: Candara, sans-serif;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  h3{
+    font-family: Candara, sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+  }
+  h2{
+    font-family: Candara, sans-serif;
+    font-size: large;
+    text-decoration: none;
+  }
+
+  .mobile-container {
+    max-width: 100%;
+    margin: auto;
+    background-color: #F0E3E3;
+    color: black;
+    font-family: Candara, sans-serif;
+    font-size: 25px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #B54343;
+    position: fixed; /* Закріплюємо зверху */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Щоб елемент завжди був зверху */
+  }
+
+  .topnav #myLinks 
+   {
+    padding: 15px;
+    display: none;
+    position: fixed; 
+    top: 60px; /* Відступ зверху дорівнює висоті панелі */
+    right: 0;
+    width: 30%; /* Ширина меню */
+    background-color: #B54343; 
+    height: auto; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    overflow: hidden; /* Прибирає зайвий контент, якщо є */
+    z-index: 999; /* Забезпечує, щоб меню відображалося поверх іншого контенту */
+   }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    font-family: Candara, sans-serif;
+    font-size: 25px;
+  }
+
+  .topnav a.icon {
+    background: #B54343;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: Candara, sans-serif;
+    font-size: 25px;
+  }
+
+  .topnav a:hover {
+    background-color: #dcbdbd;
+    color: black;
+    font-family: Candara, sans-serif;
+    font-size: 25px;
+    
+  }
+
+  .active {
+    background-color: #B54343;
+    color: white; /* Колір тексту "Українська мова" */
+    pointer-events: none; /* Вимикає можливість натискання */
+  }
+
+  .gray-section1 {
+    background-color: #F0E3E3;
+    height: 900px;
+    padding-top: 50px; /* Додаємо відступ, щоб контент не заходив під закріплену навігацію */
+
+  }
+
+  .red-section1 {
+    background-color: #F0E3E3;
+    height: 800px;
+  }
+
+  .gray-section2 {
+    background-color: #F0E3E3;
+    height:  900px;
+  }
+  .gray-section3 {
+    background-color: #F0E3E3;
+    height:  900px;
+  }
+
+  .red-section2 {
+    background-color: #B54343;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: relative;
+}
+
+.image-container {
+    background-color: #F0E3E3;
+    height: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+}
+
+.image-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+  p{
+    font-size: xx-large;
+  }
+  button {
+  border: 3px solid #B54343;
+  color: #000000;
+  padding: 20px 70px;
+  text-align: center;
+  font-family: Candara, sans-serif;
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Додає тінь */
+  transition: box-shadow 0.3s ease; /* Додає плавність змін тіні */
+}
+
+button:hover {
+  background-color: #B54343;
+  color: rgb(35, 15, 15);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Збільшує тінь при наведенні */
+}
+
+   .button1 {
+    padding: 20px 40px;
+    margin: 4px 2px;
+    float: left;
+}
+a{
+  color: #B54343;
+  text-decoration: none; 
+}
+a:hover {
+    color: #990f00;
+    text-decoration: underline; 
+    font-weight: italic;
+}
+
+a:active {
+    color: #3b0707;
+    text-decoration: none; 
+}
+
+</style>
+</head>
+<body>
+
+<div class="mobile-container">
+
+  <div class="topnav">
+    <a href="#home" class="active">Навчальний посібник з української мови</a>
+    <div id="myLinks">
+      <a href="test_main.html">Перейти до тестування</a>
+      <a href="study_main.html">Перейти до навчання</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i><!-- Іконка меню-гамбургер -->
+    </a>
+  </div>
+
+   <div class="container">
+    <div class="gray-section1">
+      <img src="https://i.pinimg.com/736x/29/5a/d8/295ad823174a2af142160ae859ea8638.jpg" align="left" style="width:50%">
+      <h1 style="text-align: center; padding-top: 15%;">Посібник з української мови</h1>
+      <h3 style="text-align: center;">Нації вмирають не від інфаркту. Спочатку їм відбирає <a href="#L">мову</a>. Ми повинні бути свідомі того, що мовна проблема для нас актуальна і на початку ХХІ століття, і якщо ми не схаменемося, то матимемо дуже невтішну перспективу.</h3>
+    <h3 style="text-align: right;">(Ліна Костенко)</h3>
+    
+    </div>
+
+    <div class="red-section1">
+      <h1 style="text-align: center;"><a href="#T">Протестуй</a> та <a href="#L">вивчай</a> українську мову!</h1>
+    <p style="text-align: left; padding-right: 49%; padding-left: 5%;">Цей онлайн-ресурс дозволяє перевіряти та поглиблювати свої знання, використовуючи алгоритм інтерактивної перевірки знань. Тестування можна проходити безліч разів, отримуючи миттєві результати. Учні 10-х класів, ви маєте змогу швидко, надійно та безкоштовно підготуватися до екзаменів з української мови.</p>
+    <p style="text-align: right; padding-left: 49%; padding-right: 5%;">Сайт стане в нагоді всім, хто прагне граматично правильно знати українську мову. Викладачі, батьки та всі, хто хоче вдосконалити свої знання, можуть скористатися цим ресурсом. Інтерактивні тести зроблять процес навчання ефективним і цікавим, допомагаючи вам краще засвоїти матеріал та вдосконалити свої мовні навички.</p>
+  </div>
+
+    <div class="gray-section2">
+      <img src="https://i.pinimg.com/736x/2a/5c/aa/2a5caa8ee7e178182e51a0535d9d9940.jpg" align="right" style="width:50%">
+      <p style="text-align: left; padding-top: 10%;  padding-left: 5%;  padding-right: 55%;">Перед тим як розпочати навчання, пропонуємо вам перевірити свій рівень знань з української мови. Це допоможе вам визначити свої сильні та слабкі сторони, щоб зосередити увагу на тих темах, які потребують додаткової уваги. Натисніть кнопку <b id = "T">"Розпочати тестування" </b>і пройдіть тест, щоб отримати аналіз ваших знань.</p>
+      <a href="test_main.html">
+      <button class="button button1" style="margin-left: 5%">Розпочати тестування</button> 
+    </a>
+    </div>
+
+    <div class="gray-section3">
+      <img src="https://i.pinimg.com/736x/31/a0/74/31a07438044e72ef36b7013df8e7c867.jpg" align="left" style="width:50%">
+      <p style="text-align: right; padding-top: 10%; padding-right: 5%; padding-left: 55%;">Готові підвищити свій рівень знань з української мови? Натисніть кнопку <b id="L">"Розпочати навчання"</b> і зануртеся у світ цікавих і корисних матеріалів. Дані інтерактивні завдання допоможуть вам легко і швидко освоїти нові теми, зробивши процес навчання ефективним та захоплюючим. Не зволікайте, почніть свою подорож до успіху вже сьогодні!</p>
+      <a href="study_main.html">
+        <button class="button button1" style="margin-left: 5%;">Розпочати навчання</button> 
+      </a>
+    </div>
+    
+    <div class="red-section2">
+      <div class="image-container">
+        <a href="https://www.dlit.dp.ua/" target="_blank" title="Перейти на сайт ДНЛІТ">   
+          <img src="https://dniproedu.dp.ua/wp-content/uploads/2024/02/dlit.png" alt="Логотип ДНЛІТ"></a>
+      </div>
+      <div>
+      <h2>Робота виконана Безуглою Марією Дмитрівною.</h2>
+      <h2>Під керівництвом Сафронової Інги Анатоліївни та Прощенко Олени Володимирівни.</h2>
+      <h2>Дніпровський науковий ліцей інформаційних технологій
+          Дніпровської міської ради (ДНЛІТ ДМР)
+          </br>Dnipro Scientific Lyceum of Information Technologies
+          (DS LIT).
+      </h2>
+  </div>
+
+</div>
+
+<script>
+  // функція відкриття/закриття меню
+  function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+          x.style.display = "none";
+      } else {
+          x.style.display = "block";
+      }
+  }
+
+  // Закриваємо меню при кліку поза ним
+  document.addEventListener('click', function(event) {
+      var menu = document.getElementById('myLinks');
+      var toggleButton = document.querySelector('.topnav .icon');
+
+      // Перевірка: якщо клік поза межами меню та кнопки відкриття
+      if (menu.style.display === 'block' && !menu.contains(event.target) && !toggleButton.contains(event.target)) {
+          menu.style.display = 'none'; // Закрити меню
+      }
+  });
+</script>
+
+</body>
+</html>
