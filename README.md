@@ -73,6 +73,9 @@ The website was tested in multiple browsers to ensure compatibility:
 Status Completed as an **academic graduation project**  
 
 
+To correctly view my graduation project, please open the folder “Graduation Project Code” and run the HTML file named home.html.
+After opening this file, all page navigation on the website will work automatically.
+
 ---
 
 ## Author
